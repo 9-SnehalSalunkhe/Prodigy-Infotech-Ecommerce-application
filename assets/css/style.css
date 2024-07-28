@@ -132,47 +132,97 @@ navbar i{
 }
 
 #new .one img{
-     width:70%;
-     height:70%;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-}
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 #new .one{
     position: relative;
 }
 #new .one .details{
-    position: absolute;
+    position:absolute;
     top:0;
     left:0;
-    color:whitesmoke;
+    color:burlywood;
     font-weight: bold;
     transition: 0.4 ease;
-    opacity:0.4;
-    background-color:rgb(4, 3, 3);
+    opacity: 0.8;
+    background-color: rgb(1,1,1);
     width:100%;
     height:100%;
+}
+#new .one .details:hover{
+    background-color:cornsilk;
+    transition: 0.5s ease;
+}
+    
+#new .one .details button:hover{
+    background-color: #ff3f6c;
 
 }
 #new .one:nth-child(1) .details{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    align-items:flex-start;
-    text-align:start;
+    text-align: start;
+
 }
 #new .one:nth-child(2) .details{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items:center;
+    flex-direction: column;
     text-align: center;
+    
 }
 #new .one:nth-child(3) .details{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: flex-end;
+    flex-direction: column;
     text-align:end;
+    
+}
+
+/* products designing */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-button{
+    background-color:  #ff3f6c;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-button{
+    transform: translateY(0px);
+    opacity: 1;
+}
+hr{
+    width:30px;
+    height: 3px !important;
+    opacity:1 !important;
+    background-color: #e43c4d;
+}
+.star{
+    padding: 10px 0;
+
+}
+.star i{
+    font-size: 0.9 rem;
+    color:goldenrod;
 }
